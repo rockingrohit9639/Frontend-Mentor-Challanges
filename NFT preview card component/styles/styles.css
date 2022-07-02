@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --primary-cyan-hvoer: hsla(178, 100%, 50%, 0.466);
+  --neutral-main-bg: hsl(217, 54%, 11%);
+  --neutral-card-bg: hsl(216, 50%, 16%);
+  --neutral-line: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --fs-paragraph: 18px;
+  --font-family: "Outfit", sans-serif;
+  --fw-light: 300;
+  --fw-refular: 400;
+  --fw-bold: 600;
+}
+
+body {
+  background-color: var(--neutral-main-bg);
+  font-size: var(--fs-paragraph);
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Utility Classes  */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hover:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+/* Utility Classes  */
+
+.card {
+  width: clamp(200px, 100vw, 370px);
+  background-color: var(--neutral-card-bg);
+  padding: 1.5rem;
+  height: max-content;
+  border-radius: 1rem;
+}
+
+.card__imgContainer {
+  position: relative;
+}
+
+.card__hoverState {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-cyan-hvoer);
+  background-blend-mode: screen;
+  width: 100%;
+  height: 98.5%;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+.card__imgContainer:hover .card__hoverState {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card__title {
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
+  margin-block: 1rem;
+  color: var(--neutral-white);
+}
+
+.card__content {
+  display: inline-block;
+  color: var(--primary-soft-blue);
+  font-weight: var(--fw-light);
+  margin-block: 0.5rem;
+}
+
+.card__ethInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
+
+.eth__amount {
+  color: var(--primary-cyan);
+  font-size: 16px;
+  font-weight: var(--fw-bold);
+}
+
+.time {
+  font-size: 16px;
+  color: var(--primary-soft-blue);
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-line);
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.authorInfo__img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.creationText {
+  color: var(--primary-soft-blue);
+  font-weight: var(--fw-light);
+}
+
+.authorInfo__name {
+  color: var(--neutral-white);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: var(--fs-paragraph);
+  padding-block: 1rem;
+}
+
+.highlight {
+  color: var(--primary-cyan);
+}
