@@ -11,4 +11,8 @@ const data = [
     title: "NFT Preview Card Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/NFT-preview-card-component",
   },
+  {
+    title: "Product Preview Component",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/product-preview-card-component-main/",
+  },
 ];

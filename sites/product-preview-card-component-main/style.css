@@ -119,8 +119,23 @@ body {
 }
 
 .card__button:hover {
-    background-color: hsl(158, 34%, 25%);
- }
+  background-color: hsl(158, 34%, 25%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-neutral-grayish-blue);
+  margin-left: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
 
 @media only screen and (min-width: 700px) {
   .card {
