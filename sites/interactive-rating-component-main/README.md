@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,23 +27,26 @@ Users should be able to:
 ### Screenshot
 
 ##### Desktop
+
 ![Desktop Preview](./previews/desktop.jpg)
 
 ##### Mobile
-![Mobile Preview](./previews/mobile.jpg)
 
+![Mobile Preview](./previews/mobile.jpg)
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/rockingrohit9639/NFT-preview-card-component)
-- Live Site URL: [Github Pages](https://rockingrohit9639.github.io/NFT-preview-card-component/)
+- Solution URL: [GitHub](https://github.com/rockingrohit9639/Frontend-Mentor-Challanges/tree/master/sites/interactive-rating-component-main)
+- Live Site URL: [Github Pages](https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/interactive-rating-component-main/)
 
 ## My process
 
 ### Built with
 
-- HTML
+- HTML5
 - CSS
+- Flexbox
+- Mobile-first workflow
 
 ### Useful resources
 
@@ -54,5 +57,5 @@ Users should be able to:
 
 - Website - [Rohit Kumar Saini](https://portfolio-45b9b.web.app/)
 - Frontend Mentor - [@rockingrohit9639](https://www.frontendmentor.io/profile/rockingrohit9639)
-- Twitter - [@_rohit__404](https://twitter.com/_rohit__404)
+- Twitter - [@\_rohit\_\_404](https://twitter.com/_rohit__404)
 - LinkedIn - [Rohit Kumar Saini](https://www.linkedin.com/in/rohit-kumar-saini/)
