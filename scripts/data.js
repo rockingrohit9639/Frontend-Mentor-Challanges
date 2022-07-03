@@ -15,4 +15,8 @@ const data = [
     title: "Product Preview Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/product-preview-card-component-main/",
   },
+  {
+    title: "Interactive Rating Component",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/interactive-rating-component-main",
+  },
 ];
