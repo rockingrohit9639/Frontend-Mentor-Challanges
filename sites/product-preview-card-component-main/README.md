@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/rockingrohit9639/Advice-generator-app)
-- Live Site URL: [Github Pages](https://rockingrohit9639.github.io/Advice-generator-app/)
+- Solution URL: [GitHub](https://github.com/rockingrohit9639/Frontend-Mentor-Challanges/tree/master/sites/product-preview-card-component-main)
+- Live Site URL: [Github Pages](https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/product-preview-card-component-main/)
 
 ## My process
 
