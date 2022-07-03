@@ -139,7 +139,7 @@ input[type="radio"]:checked + .rating {
 }
 
 .card__thankyouText {
-  color: var(--clr-neutral-white)
+  color: var(--clr-neutral-white);
 }
 
 .card__thankyouPara {
@@ -147,4 +147,20 @@ input[type="radio"]:checked + .rating {
   color: var(--clr-neutral-light-gray);
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary-orange);
+  margin-left: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--clr-neutral-light-gray);
 }
