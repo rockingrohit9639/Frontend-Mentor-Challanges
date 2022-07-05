@@ -150,6 +150,22 @@ body {
   color: #000;
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-primary-bright-blue);
+  margin-left: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: #000;
+}
+
 @media only screen and (min-width: 375px) {
   body {
     background: url("./images/pattern-background-desktop.svg");
