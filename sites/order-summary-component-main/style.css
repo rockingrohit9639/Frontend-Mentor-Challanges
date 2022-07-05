@@ -21,3 +21,140 @@
   --font-weight-700: 700;
   --font-weight-900: 900;
 }
+
+body {
+  background: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--clr-primary-pale-blue);
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: calc(100% - 50px);
+  max-width: 350px;
+  height: max-content;
+  background-color: var(--clr-neutral-very-pale-blue);
+  border-radius: 20px;
+  box-shadow: 0 20px 10px -5px hsl(225, 100%, 90%);
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 30px;
+}
+
+.card__heading {
+  font-size: 20px;
+  font-weight: var(--font-weight-900);
+  color: var(--clr-neutral-dark-blue);
+}
+
+.card__summary {
+  text-align: center;
+  font-size: var(--font-size);
+  line-height: 1.5;
+  color: var(--clr-neutral-desaturated-blue);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-500);
+  flex-shrink: 0;
+}
+
+.card__priceBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 96.4%);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+}
+
+.plan__title {
+  font-size: 14px;
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--font-weight-700);
+}
+
+.plan__price {
+  font-size: 0.8rem;
+  color: var(--clr-neutral-desaturated-blue);
+  font-weight: var(--font-weight-500);
+  margin-top: 0.3rem;
+}
+
+.priceBox__button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--clr-primary-bright-blue);
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.priceBox__button:hover {
+  text-decoration: none;
+}
+
+.card__paymentButton {
+  border: none;
+  outline: none;
+  background-color: var(--clr-primary-bright-blue);
+  padding: 0.8rem;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: var(--font-weight-700);
+  font-family: var(--font-family);
+  color: var(--clr-neutral-very-pale-blue);
+  box-shadow: 0 15px 20px -10px hsla(245, 75%, 52%, 0.55);
+  cursor: pointer;
+}
+
+.card__paymentButton:hover {
+  background-color: hsl(245, 75%, 60%);
+}
+
+.card__cancelButton {
+  /* margin: 20px 30px; */
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: var(--font-weight-700);
+  color: var(--clr-neutral-desaturated-blue);
+  cursor: pointer;
+}
+
+.card__cancelButton:hover {
+  color: #000;
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--clr-primary-pale-blue);
+  }
+}
