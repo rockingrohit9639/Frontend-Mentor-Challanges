@@ -19,4 +19,8 @@ const data = [
     title: "Interactive Rating Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/interactive-rating-component-main",
   },
+  {
+    title: "Order Summary Component",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/order-summary-component-main",
+  },
 ];
