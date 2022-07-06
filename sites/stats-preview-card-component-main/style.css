@@ -121,6 +121,23 @@ body {
   margin-top: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-primary-accent);
+  margin-left: 0.5rem;
+}
+
+footer {
+  color: var(--clr-neutral-heading);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-family: var(--ff-inter);
+}
+
 @media only screen and (min-width: 375px) {
   .card {
     max-width: 350px;
