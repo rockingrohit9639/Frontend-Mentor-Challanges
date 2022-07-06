@@ -1,6 +1,6 @@
 # Frontend Mentor Challanges Solutions
 
-This repository contains the solutions of challanges by [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This repository contains the solutions of challenges by [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Author
 
