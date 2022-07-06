@@ -27,4 +27,8 @@ const data = [
     title: "Stats Card Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/stats-preview-card-component-main",
   },
+  {
+    title: "3 Column Preview Cards",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/3-column-preview-card-component-main",
+  },
 ];
