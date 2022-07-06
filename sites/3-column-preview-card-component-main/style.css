@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-bright-orange: hsl(31, 77%, 52%);
+  --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+  --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --clr--neutral-text: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-bg: hsl(0, 0%, 95%);
+
+  --fs-text: 15px;
+  --ff-lexend-deca: "Lexend Deca", sans-serif;
+  --ff-big-shoulders: "Big Shoulders Display", cursive, serif;
+}
+
+body {
+  background-color: var(--clr-neutral-bg);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100vh;
+}
+
+.cards {
+  width: calc(100% - 50px);
+  margin-block: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  min-height: 450px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.card__img {
+  width: 50px;
+}
+
+.card__heading {
+  font-size: 2rem;
+  font-family: var(--ff-big-shoulders);
+  text-transform: uppercase;
+  color: var(--clr-neutral-bg);
+}
+
+.card__text {
+  font-size: var(--fs-text);
+  font-family: var(--ff-lexend-deca);
+  color: var(--clr--neutral-text);
+  line-height: 1.5;
+}
+
+.card__button {
+  border: none;
+  outline: none;
+  max-width: 70%;
+  padding: 1rem;
+  border-radius: 50px;
+  font-family: var(--ff-lexend-deca);
+}
+
+.card:nth-child(1) {
+  border-radius: 5px 5px 0 0;
+  background-color: var(--clr-primary-bright-orange);
+}
+
+.card:nth-child(1) button {
+  color: var(--clr-primary-bright-orange);
+}
+
+.card:nth-child(2) {
+  background-color: var(--clr-primary-dark-cyan);
+}
+
+.card:nth-child(2) button {
+  color: var(--clr-primary-dark-cyan);
+}
+
+.card:nth-child(3) {
+  border-radius: 0 0 5px 5px;
+  background-color: var(--clr-primary-very-dark-cyan);
+}
+
+.card:nth-child(3) button {
+  color: var(--clr-primary-very-dark-cyan);
+}
+
+@media only screen and (min-width: 750px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .card:nth-child(3) {
+    border-radius: 0 5px 5px 0;
+  }
+}
