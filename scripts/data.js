@@ -23,4 +23,8 @@ const data = [
     title: "Order Summary Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/order-summary-component-main",
   },
+  {
+    title: "Stats Card Component",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/stats-preview-card-component-main",
+  },
 ];
