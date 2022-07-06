@@ -104,6 +104,23 @@ body {
   color: var(--clr-primary-very-dark-cyan);
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-primary-bright-orange);
+  margin-left: 0.5rem;
+}
+
+footer {
+  font-family: var(--ff-lexend-deca);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: #000;
+}
+
 @media only screen and (min-width: 750px) {
   .cards {
     flex-direction: row;
