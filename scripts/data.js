@@ -35,4 +35,8 @@ const data = [
     title: "Profile Card Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/profile-card-component-main",
   },
+  {
+    title: "Hurdle Langin Page",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/huddle-landing-page-with-single-introductory-section-master",
+  },
 ];
