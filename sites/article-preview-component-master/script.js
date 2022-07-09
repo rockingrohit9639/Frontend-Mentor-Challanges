@@ -6,12 +6,12 @@ const desktopShare = document.querySelector(".desktop__share");
 
 mobileShareButton1.addEventListener("click", handleMobileShareToggle);
 mobileShareButton2.addEventListener("click", handleMobileShareToggle);
-desktopShareButton.addEventListener("click", handleMobileShareToggle);
+desktopShareButton.addEventListener("click", handleDesktopShareToggle);
 
 function handleMobileShareToggle() {
   shareButtons.classList.toggle("active");
 }
 
-function handleMobileShareToggle() {
+function handleDesktopShareToggle() {
   desktopShare.classList.toggle("active");
 }

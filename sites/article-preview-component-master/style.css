@@ -7,7 +7,7 @@
 }
 
 :root {
-  --clr-dark-dray: hsl(217, 19%, 35%);
+  --clr-dark-gray: hsl(217, 19%, 35%);
   --clr-dark-blue: hsl(214, 17%, 51%);
   --clr-gray-blue: hsl(212, 23%, 69%);
   --clr-light-gray-blue: hsl(210, 46%, 95%);
@@ -69,7 +69,7 @@ body {
 .card__heading {
   font-size: 17px;
   font-weight: var(--fw-700);
-  color: var(--clr-dark-dray);
+  color: var(--clr-dark-gray);
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -104,7 +104,7 @@ body {
 .author__name {
   font-size: var(--fs-text);
   font-weight: var(--fw-700);
-  color: var(--clr-dark-dray);
+  color: var(--clr-dark-gray);
 }
 
 .author__date {
@@ -129,7 +129,7 @@ body {
 }
 
 .share__buttons {
-  background-color: var(--clr-dark-dray);
+  background-color: var(--clr-dark-gray);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -148,7 +148,7 @@ body {
 }
 
 .desktop__share {
-  background-color: var(--clr-dark-dray);
+  background-color: var(--clr-dark-gray);
   position: absolute;
   bottom: 33%;
   right: -9%;
@@ -168,7 +168,7 @@ body {
   content: "\A";
   border-style: solid;
   border-width: 10px 15px 10px 0;
-  border-color: transparent var(--clr-dark-dray) transparent transparent;
+  border-color: transparent var(--clr-dark-gray) transparent transparent;
   position: absolute;
   top: calc(100% - 5px);
   left: 50%;
@@ -195,6 +195,22 @@ body {
 .share__buttons.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-dark-gray);
+  margin-left: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--clr-neutral-light-gray);
 }
 
 @media only screen and (min-width: 768px) {
