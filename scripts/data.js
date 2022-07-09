@@ -39,4 +39,8 @@ const data = [
     title: "Hurdle Langin Page",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/huddle-landing-page-with-single-introductory-section-master",
   },
+  {
+    title: "Article Preview Component",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/article-preview-component-master",
+  },
 ];
