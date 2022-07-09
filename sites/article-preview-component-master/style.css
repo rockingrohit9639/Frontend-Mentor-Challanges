@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-dray: hsl(217, 19%, 35%);
+  --clr-dark-blue: hsl(214, 17%, 51%);
+  --clr-gray-blue: hsl(212, 23%, 69%);
+  --clr-light-gray-blue: hsl(210, 46%, 95%);
+
+  --fs-text: 13px;
+  --ff-manrope: "Manrope", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+body {
+  background-color: var(--clr-light-gray-blue);
+  font-family: var(--ff-manrope);
+  font-weight: var(--fw-500);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: calc(100% - 3rem);
+  height: max-content;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.card__imgBox {
+  width: 100%;
+  flex: 30%;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__content {
+  flex: 70%;
+  padding: 1.5rem;
+}
+
+.card__heading {
+  font-size: 17px;
+  font-weight: var(--fw-700);
+  color: var(--clr-dark-dray);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card__desc {
+  font-size: var(--fs-text);
+  color: var(--clr-dark-blue);
+  font-weight: var(--fw-500);
+  line-height: 1.5;
+}
+
+.card__bottom {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bottom__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author__name {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-700);
+  color: var(--clr-dark-dray);
+}
+
+.author__date {
+  font-size: var(--fs-text);
+  color: var(--clr-gray-blue);
+  margin-top: 0.2rem;
+}
+
+.share {
+  background-color: var(--clr-light-gray-blue);
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.share__buttons {
+  background-color: var(--clr-dark-dray);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons__icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.share__text {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: var(--clr-gray-blue);
+}
+
+.share__buttons.active {
+  transform: translateY(0);
+}
