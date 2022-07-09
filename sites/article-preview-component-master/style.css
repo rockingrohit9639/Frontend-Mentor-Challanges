@@ -32,17 +32,22 @@ body {
   justify-content: center;
 }
 
+.card__wrapper {
+  position: relative;
+}
+
 .card {
-  width: calc(100% - 3rem);
+  width: 100%;
   height: max-content;
   background-color: #fff;
   border-radius: 10px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  max-width: 350px;
+  overflow: hidden;
 }
 
 .card__imgBox {
@@ -52,6 +57,8 @@ body {
 
 .card__img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card__content {
@@ -114,6 +121,11 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.iconBox {
+  cursor: pointer;
 }
 
 .share__buttons {
@@ -126,8 +138,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0;
   transform: translateY(100%);
   transition: all 0.3s ease-in-out;
+}
+
+.desktop__shareButton {
+  display: none;
+}
+
+.desktop__share {
+  background-color: var(--clr-dark-dray);
+  position: absolute;
+  bottom: 33%;
+  right: -9%;
+  z-index: 100;
+  width: 200px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.desktop__share::before {
+  content: "\A";
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent var(--clr-dark-dray) transparent transparent;
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+.desktop__share.active {
+  opacity: 1;
 }
 
 .buttons__icons {
@@ -145,4 +194,33 @@ body {
 
 .share__buttons.active {
   transform: translateY(0);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    max-width: 700px;
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .card__imgBox {
+    flex: 40%;
+  }
+
+  .card__content {
+    flex: 60%;
+  }
+
+  .share__buttons {
+    display: none;
+  }
+
+  .mobile__share1 {
+    display: none;
+  }
+
+  .desktop__shareButton {
+    display: flex;
+  }
 }
