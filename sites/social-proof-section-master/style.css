@@ -22,3 +22,74 @@
   --fw-500: 500;
   --fw-700: 700;
 }
+
+body {
+  font-size: var(--font-size);
+  background-color: var(--clr-light-gray-megenta);
+  font-weight: var(--fw-400);
+}
+
+/*****************************
+ *  Utility Classes
+ *****************************/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 80rem;
+  padding-inline: var(--padding, 1rem);
+  margin-inline: auto;
+}
+
+.clr-dark-megenta {
+  color: var(--clr-dark-megenta);
+}
+
+.clr-soft-pink {
+  color: var(--clr-soft-pink);
+}
+
+.clr-dark-gray-megenta {
+  color: var(--clr-dark-gray-megenta);
+}
+
+.clr-light-gray-megenta {
+  color: var(--clr-light-gray-megenta);
+}
+
+.clr-white {
+  color: var(--clr-white);
+}
+
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+
+.fw-500 {
+  font-weight: var(--fw-500);
+}
+
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-bottom: var(--gap, 1rem);
+}
