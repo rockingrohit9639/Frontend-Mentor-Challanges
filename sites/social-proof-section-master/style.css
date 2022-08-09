@@ -179,6 +179,21 @@ body {
   line-height: 1.3;
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-dark-megenta);
+  margin-left: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
 @media only screen and (min-width: 1024px) {
   .top {
     flex-direction: row;
