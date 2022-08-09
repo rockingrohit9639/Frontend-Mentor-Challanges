@@ -43,4 +43,8 @@ const data = [
     title: "Article Preview Component",
     url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/article-preview-component-master",
   },
+  {
+    title: "Social Proof Section",
+    url: "https://rockingrohit9639.github.io/Frontend-Mentor-Challanges/sites/social-proof-section-master",
+  },
 ];
