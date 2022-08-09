@@ -118,3 +118,61 @@ body {
 .flow > *:where(:not(:first-child)) {
   margin-bottom: var(--gap, 1rem);
 }
+
+/*****************************
+ *  Styles
+ *****************************/
+
+.top__left {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.desc {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: var(--font-size);
+}
+
+.rating {
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 12px;
+}
+
+.rating:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.testimonials {
+  margin-block: 3rem;
+}
+
+.testimonial {
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 290px;
+}
+
+.testimonial__authorInfo {
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.testimonial__authorInfo img {
+  border-radius: 50%;
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+.testimonial__authorDesig {
+  margin-top: 0.3rem;
+}
+
+.testimonial__content {
+  line-height: 1.3;
+}
