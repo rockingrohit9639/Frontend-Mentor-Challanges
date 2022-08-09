@@ -21,11 +21,12 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-700: 700;
+  --ff-league: "League Spartan", sans-serif;
 }
 
 body {
   font-size: var(--font-size);
-  background-color: var(--clr-light-gray-megenta);
+  background-color: var(--clr-white);
   font-weight: var(--fw-400);
 }
 
@@ -74,8 +75,28 @@ body {
   color: var(--clr-light-gray-megenta);
 }
 
+.bg-dark-megenta {
+  background-color: var(--clr-dark-megenta);
+}
+
+.bg-dark-gray-megenta {
+  background-color: var(--clr-light-gray-megenta);
+}
+
 .clr-white {
   color: var(--clr-white);
+}
+
+.fs-500 {
+  font-size: var(--font-size, 1rem);
+}
+
+.fs-600 {
+  font-size: 2rem;
+}
+
+.fs-700 {
+  font-size: 3rem;
 }
 
 .fw-400 {
@@ -88,6 +109,10 @@ body {
 
 .fw-700 {
   font-weight: var(--fw-700);
+}
+
+.ff-league {
+  font-family: var(--ff-league);
 }
 
 .flow > *:where(:not(:first-child)) {
